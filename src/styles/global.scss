@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+body {
+  background: $body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $secondary-dark;
+}
+
+a:hover {
+  color: $secondary; 
+}
+
+.gatsby-highlight-code-line {
+  background-color: #7c859754;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #7e9edd;
+}

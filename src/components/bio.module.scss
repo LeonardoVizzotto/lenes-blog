@@ -1,0 +1,35 @@
+@import "./../styles/variables.scss";
+
+.container {
+  box-shadow: 0 14px 38px $secondary-light, 0 15px 12px $secondary-lightest;
+  padding: 1.5em;
+
+  margin-bottom: 3.5em;
+  border-radius: 0.5em;
+}
+
+.infos {
+  display: flex;
+
+  > p {
+    margin-bottom: 0;
+  }
+}
+
+.avatar {
+  margin-right: 1.5em;
+  margin-bottom: 0;
+  min-width: 50px;
+  border-radius: 100%;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    width: 6.5%;
+    > svg {
+      margin-right: 0.5em;
+    }
+  }
+}
