@@ -3,7 +3,7 @@ import styles from "./githubCorner.module.scss"
 
 const GitCorner = () => (
   <a
-    href="https://your-url"
+    href="https://github.com/LeonardoVizzotto/lenes-blog"
     className={styles.githubCorner}
     aria-label="View source on GitHub"
   >
