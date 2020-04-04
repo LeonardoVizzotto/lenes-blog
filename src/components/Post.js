@@ -5,7 +5,7 @@ import { rhythm } from "../utils/typography"
 const GitCorner = ({ node }) => {
   const title = node.frontmatter.title || node.fields.slug
   return (
-    <article >
+    <article>
       <header>
         <h3
           style={{

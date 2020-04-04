@@ -5,6 +5,7 @@ import Bio from "../components/Bio"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Post from "../components/Post"
+import Divider from "../components/Divider"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -14,8 +15,11 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      {posts.map(({ node }) => (
-        <Post key={node.fields.slug} node={node}></Post>
+      {posts.map(({ node }, index) => (
+        <React.Fragment>
+          <Post key={node.fields.slug} node={node}></Post>
+          {posts.length - 1 > index && <Divider />}
+        </React.Fragment>
       ))}
     </Layout>
   )
