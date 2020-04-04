@@ -2,10 +2,12 @@
 
 .container {
   box-shadow: 0 14px 38px $secondary-light, 0 15px 12px $secondary-lightest;
+  
   padding: 1.5em;
 
   margin-bottom: 3.5em;
   border-radius: 0.5em;
+  background-color: $primary;
 }
 
 .infos {
