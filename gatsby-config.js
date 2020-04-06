@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Lene's Blog`,
+    title: `Lene's`,
     author: {
       name: `Leonardo Vizzotto`,
       summary: `I'm only studying stuff`,
@@ -65,7 +65,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Lene's Blog`,
+        name: `Lene's`,
         short_name: `Lene's`,
         start_url: `/`,
         background_color: `#ffffff`,
