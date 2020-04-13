@@ -2,9 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import Github from "./../assets/github.svg"
-import LinkedIn from "./../assets/linkedin.svg"
-import StackOverflow from "./../assets/stackoverflow.svg"
+import Github from "@assets/github.svg"
+import LinkedIn from "@assets/linkedin.svg"
+import StackOverflow from "@assets/stackoverflow.svg"
 
 import styles from "./bio.module.scss"
 

@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Bio from "../components/Bio"
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Bio from "@components/Bio/Bio"
+import Layout from "@components/Layout/Layout"
+import SEO from "@components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
 

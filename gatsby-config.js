@@ -81,6 +81,25 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@layouts": "src/layouts",
+          "@pages": "src/pages",
+          "@styles": "src/styles",
+          "@templates": "src/templates",
+          "@utils": "src/utils",
+          "@posts": "content/posts",
+          "@assets": "src/assets"
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    }
   ],
 }

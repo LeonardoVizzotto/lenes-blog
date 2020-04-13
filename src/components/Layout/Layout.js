@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import GitCorner from "./GithubCorner"
-import { rhythm, scale } from "../utils/typography"
-import syles from "./layout.module.scss";
+import GitCorner from "@components/GithubCorner/GithubCorner"
+import { rhythm, scale } from "@utils/typography"
+import styles from "./layout.module.scss";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -51,7 +51,7 @@ const Layout = ({ location, title, children }) => {
     <React.Fragment>
       <GitCorner />
       <div
-      className={syles.layout}
+      className={styles.layout}
       >
         <header>{header}</header>
         <main>{children}</main>
