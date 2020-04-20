@@ -35,7 +35,7 @@ const Header = () => {
         </li>
         <li>
           <a
-            href={`https://github.com/${social.twitter}`}
+            href={`https://twitter.com/${social.twitter}`}
             aria-label="Link to twitter"
           >
             <Twitter />
