@@ -1,59 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
-import GitCorner from "@components/GithubCorner/GithubCorner"
-import { rhythm, scale } from "@utils/typography"
-import styles from "./layout.module.scss";
+import styles from "./layout.module.scss"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+import Header from "@components/Header/Header"
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+const Layout = ({ children }) => {
   return (
     <React.Fragment>
-      <GitCorner />
-      <div
-      className={styles.layout}
-      >
-        <header>{header}</header>
+      <Header />
+      <div className={styles.layout}>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

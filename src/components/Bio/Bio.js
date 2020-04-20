@@ -2,10 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import Github from "@assets/github.svg"
-import LinkedIn from "@assets/linkedin.svg"
-import StackOverflow from "@assets/stackoverflow.svg"
-
 import styles from "./bio.module.scss"
 
 const Bio = () => {
@@ -23,12 +19,6 @@ const Bio = () => {
           author {
             name
             summary
-          }
-          social {
-            twitter
-            github
-            stackOverflow
-            linkedin
           }
         }
       }
@@ -52,26 +42,6 @@ const Bio = () => {
           <br />
           {author.summary}
         </p>
-      </div>
-      <div className={styles.socialLinks}>
-        <a
-          href={`https://github.com/${social.github}`}
-          aria-label="Link to github"
-        >
-          <Github />
-        </a>
-        <a
-          href={`https://br.linkedin.com/in/${social.linkedin}`}
-          aria-label="Link to linkedin"
-        >
-          <LinkedIn />
-        </a>
-        <a
-          href={`https://stackoverflow.com/users/${social.stackOverflow}?tab=profile`}
-          aria-label="Link to stack overflow"
-        >
-          <StackOverflow />
-        </a>
       </div>
     </div>
   )
