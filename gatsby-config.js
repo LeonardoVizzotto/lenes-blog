@@ -94,7 +94,8 @@ module.exports = {
           "@templates": "src/templates",
           "@utils": "src/utils",
           "@posts": "content/posts",
-          "@assets": "src/assets"
+          "@assets": "src/assets",
+          "@hooks": "src/hooks"
         },
         extensions: [
           "js",

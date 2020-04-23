@@ -25,7 +25,7 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div className={styles.container}>
       <div className={styles.infos}>
@@ -35,10 +35,7 @@ const Bio = () => {
           className={styles.avatar}
         />
         <p>
-          Written by{" "}
-          <a href={`https://twitter.com/${social.twitter}`}>
-            <strong>{author.name}</strong>
-          </a>
+          Written by <strong>{author.name}</strong>
           <br />
           {author.summary}
         </p>
