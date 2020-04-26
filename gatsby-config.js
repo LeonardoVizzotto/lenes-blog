@@ -3,7 +3,8 @@ module.exports = {
     title: `Lene's`,
     author: {
       name: `Leonardo Vizzotto`,
-      summary: `I'm only studying stuff`,
+      summary: `Hi, I'm a software engineer trying to create something cool while learning new things`,
+      country: 'Brazil'
     },
     description: `A blog to learn how to use Gatsby and React.js.`,
     siteUrl: `https://___FUTURE_URL___.com`,
@@ -71,7 +72,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `standalone`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -94,7 +95,8 @@ module.exports = {
           "@templates": "src/templates",
           "@utils": "src/utils",
           "@posts": "content/posts",
-          "@assets": "src/assets"
+          "@assets": "src/assets",
+          "@hooks": "src/hooks"
         },
         extensions: [
           "js",

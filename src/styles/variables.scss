@@ -1,14 +1,16 @@
-$body: #1b0b26;
+// COLORS
 
-$primary: #301a3e;
-$primary-dark: #1c0e24;
-$primary-light: #8b41d2;
+$body: #1d1d20;
+$body-dark: #111013;
+$body-dark-alpha: #1d1922d5;
 
-$secondary: #ff6089;
-$secondary-dark: #f84473;
-$secondary-light: #ff6188;
-$secondary-lightest: #f84474;
+$primary: rgb(181, 126, 248);
+$primary-dark: rgb(108, 77, 148);
 
+$white: #e5dceb;
 
-$other: #ffab38;
-$white: #f4d9e0;
+// Z-INDEX
+$z-index-header: 5;
+
+// SPACES
+$header-height: 12vh;

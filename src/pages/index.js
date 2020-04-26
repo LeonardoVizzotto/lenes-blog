@@ -16,8 +16,8 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }, index) => (
-        <React.Fragment>
-          <Post key={node.fields.slug} node={node}></Post>
+        <React.Fragment key={node.fields.slug}>
+          <Post node={node}></Post>
           {posts.length - 1 > index && <Divider />}
         </React.Fragment>
       ))}
