@@ -2,7 +2,9 @@
 
 import React, { useState } from "react"
 export default function useResizer() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 746)
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== `undefined` ? window.innerWidth < 746 : false
+  )
 
   function handleSizeChange() {
     return setIsMobile(window.innerWidth < 746)
