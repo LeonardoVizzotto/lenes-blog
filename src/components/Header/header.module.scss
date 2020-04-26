@@ -96,6 +96,11 @@
       padding-top: 2px;
       background: none;
       border: none;
+      -webkit-background: none;
+      -moz-background: none;
+      -webkit-border: none;
+      -moz-border: none;
+      appearance: none;
       > svg {
         cursor: pointer;
       }
