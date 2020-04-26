@@ -8,7 +8,7 @@
 }
 .header {
   height: $header-height;
-  background-color: #000;
+  background-color: $body-dark;
   color: $white;
   padding: 0 5em;
   display: flex;
@@ -54,7 +54,7 @@
     right: 0;
     align-items: flex-start;
     width: 100%;
-    background-color: rgba(2, 1, 1, 0.801);
+    background-color: $body-dark-alpha;
     transition: top 0.5s ease-in-out;
     z-index: -1;
     > li {
