@@ -6,7 +6,7 @@ module.exports = {
       summary: `Hi, I'm a software engineer trying to create something cool while learning new things`,
       country: 'Brazil'
     },
-    description: `A blog to learn how to use Gatsby and React.js.`,
+    description: `Just another blog.`,
     siteUrl: `https://___FUTURE_URL___.com`,
     social: {
       twitter: `@_Vizzotto`,
