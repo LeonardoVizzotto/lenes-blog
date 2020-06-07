@@ -44,20 +44,6 @@ const Bio = () => {
       </p>
       <p>{author.summary}</p>
     </div>
-    // <div className={styles.container}>
-    //   <div className={styles.infos}>
-    //     <Image
-    //       fixed={data.avatar.childImageSharp.fixed}
-    //       alt={author.name}
-    //       className={styles.avatar}
-    //     />
-    //     <p>
-    //       Written by <strong>{author.name}</strong>
-    //       <br />
-    //       {author.summary}
-    //     </p>
-    //   </div>
-    // </div>
   )
 }
 

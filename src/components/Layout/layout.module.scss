@@ -1,7 +1,7 @@
 @import "@styles/variables.scss";
 
 .layout {
-  color: $white;
+  color: var(--text);
   margin-top: $header-height;
   margin-left: auto;
   margin-right: auto;

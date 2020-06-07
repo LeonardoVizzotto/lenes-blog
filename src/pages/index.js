@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 
 import Bio from "@components/Bio/Bio"
@@ -10,6 +10,16 @@ import Divider from "@components/Divider/Divider"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme")
+    if (!theme) {
+      document.body.classList.add("dark")
+      localStorage.setItem("theme", "dark")
+    } else {
+      document.body.classList.add(theme)
+    }
+  })
 
   return (
     <Layout location={location} title={siteTitle}>
