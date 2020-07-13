@@ -7,7 +7,7 @@ module.exports = {
       country: 'Brazil'
     },
     description: `Just another blog.`,
-    siteUrl: `https://___FUTURE_URL___.com`,
+    siteUrl: `https://lenes.com.br`,
     social: {
       twitter: `@_Vizzotto`,
       github: `LeonardoVizzotto`,
