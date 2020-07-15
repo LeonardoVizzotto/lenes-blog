@@ -7,7 +7,7 @@ import styles from "./bio.module.scss"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpeg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
           fixed(width: 120, height: 120) {
             ...GatsbyImageSharpFixed

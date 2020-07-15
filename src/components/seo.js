@@ -24,7 +24,7 @@ const SEO = ({ description, lang, meta, title }) => {
           }
         }
 
-        imageSrc: file(absolutePath: { regex: "/twitter-card-192x192.png/" }) {
+        imageSrc: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
           childImageSharp {
             sizes(maxWidth: 192) {
               ...GatsbyImageSharpSizes
@@ -69,6 +69,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: image,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -85,7 +89,7 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
-          name: `twitter:image:src`,
+          name: `twitter:image`,
           content: image,
         },
       ].concat(meta)}
