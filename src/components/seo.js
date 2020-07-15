@@ -77,6 +77,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `summary`,
         },
         {
+          name: `twitter:site`,
+          content: site.siteMetadata.social.twitter,
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata.social.twitter,
         },
