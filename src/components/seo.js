@@ -37,7 +37,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
 
-  let origin = ""
+  let origin = "https://lenes.com.br"
   if (typeof window !== "undefined") {
     origin = window.location.origin
   }
